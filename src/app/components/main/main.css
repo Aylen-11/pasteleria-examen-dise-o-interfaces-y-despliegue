@@ -523,7 +523,7 @@ body {
 /* equipo de trabajo */
 .seccion-equipo {
   background-color: var(--granate-dark);
-  background-image: url('/imagenes/fondo-pasteleria.jpg');
+  background-image: url('/pasteleria-examen-dise-o-interfaces-y-despliegue/imagenes/fondo-pasteleria.jpg');
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
