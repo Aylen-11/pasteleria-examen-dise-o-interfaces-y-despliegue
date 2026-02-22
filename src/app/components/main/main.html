@@ -1,0 +1,343 @@
+<!--------------------seccion del carrusel--------------------------->
+<section class="carrusel-hero" id="inicio">
+  <div id="carruselPasteleria" class="carousel slide carousel-fade"
+       data-bs-ride="carousel" data-bs-interval="4000">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carruselPasteleria"
+              data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carruselPasteleria"
+              data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carruselPasteleria"
+              data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <!------------------------------primer slide del carrusel-------------->
+      <div class="carousel-item active">
+        <div class="slide-bg slide-bg-1">
+          <img src="imagenes/carrusel-8.jpg" alt="imagen1" class="img-slide-derecha">
+          <div class="slide-contenido">
+            <p class="slide-subtitulo">&#10022;Los mejores &#10022;</p>
+            <h1 class="slide-titulo">Hacemos Realidad<br>Tus Sueños Dulces...</h1>
+            <a [routerLink]="['/']" fragment="productos" class="btn btn-slide">Ver Productos</a>
+          </div>
+        </div>
+      </div>
+
+      <!------------------segundo slide del carrusel---------------------------------->
+      <div class="carousel-item">
+        <div class="slide-bg slide-bg-2">
+          <img src="imagenes/carrusel-2.jpg" alt="imagen2" class="img-slide-derecha">
+          <div class="slide-contenido">
+            <p class="slide-subtitulo">&#10022; Calidez &amp; Amor &#10022;</p>
+            <h1 class="slide-titulo">Arte y Sabor<br>en Cada Creación...</h1>
+            <a [routerLink]="['/']" fragment="contacto" class="btn btn-slide">Cotizar Ahora</a>
+          </div>
+        </div>
+      </div>
+
+    <!---tercer slide del carrusel---------------------->
+      <div class="carousel-item">
+        <div class="slide-bg slide-bg-3">
+          <img src="imagenes/carrusel-3.jpg" alt="imagen3" class="img-slide-derecha">
+          <div class="slide-contenido">
+            <p class="slide-subtitulo">&#10022; EDICIÓN ESPECIAL &#10022;</p>
+            <h1 class="slide-titulo">Ingredientes<br>Seleccionados...</h1>
+            <a [routerLink]="['/']" fragment="galeria" class="btn btn-slide">Ver Galería</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button"
+            data-bs-target="#carruselPasteleria" data-bs-slide="prev">
+      <span class="icono-flecha">&#10094;</span>
+    </button>
+    <button class="carousel-control-next" type="button"
+            data-bs-target="#carruselPasteleria" data-bs-slide="next">
+      <span class="icono-flecha">&#10095;</span>
+    </button>
+
+  </div>
+</section>
+
+
+<!-- nuestra sección número 2  -->
+<section class="seccion-info py-5" id="info">
+  <div class="container">
+
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+        <p class="info-etiqueta">HECHO PARA TI</p>
+        <h2 class="info-titulo">Con Amor</h2>
+      </div>
+      <div class="col-md-8">
+        <p class="info-descripcion">
+          En Royale Swan cada pastel es una obra de arte diseñada especialmente para ti.
+          Usamos ingredientes premium seleccionados con cuidado, combinando técnicas artesanales
+          con presentaciones que conquistan a primera vista. Cada detalle, cada capa y cada
+          decoración lleva consigo nuestra pasión por la repostería de excelencia.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-4 col-sm-6">
+        <div class="tarjeta-beneficio text-center p-4 h-100">
+          <div class="tarjeta-icono mx-auto mb-3">
+            <i class="bi bi-truck fs-3"></i>
+          </div>
+          <h4 class="tarjeta-titulo">Entrega a Domicilio</h4>
+          <p class="tarjeta-texto">Solo 30 minutos en zonas cercanas</p>
+          <a [routerLink]="['/']" fragment="info" class="btn btn-tarjeta mt-2">Leer más</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="tarjeta-beneficio tarjeta-destacada text-center p-4 h-100">
+          <div class="tarjeta-icono tarjeta-icono-claro mx-auto mb-3">
+            <i class="bi bi-gift fs-3"></i>
+          </div>
+          <h4 class="tarjeta-titulo">Empaque Especial</h4>
+          <p class="tarjeta-texto">Presentación de regalo sin costo extra</p>
+          <a [routerLink]="['/']" fragment="info" class="btn btn-tarjeta-claro mt-2">Leer más</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="tarjeta-beneficio text-center p-4 h-100">
+          <div class="tarjeta-icono mx-auto mb-3">
+            <i class="bi bi-percent fs-3"></i>
+          </div>
+          <h4 class="tarjeta-titulo">Descuento 15%</h4>
+          <p class="tarjeta-texto">Con ocasión de nuestra apertura</p>
+          <a [routerLink]="['/']" fragment="info" class="btn btn-tarjeta mt-2">Leer más</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="seccion-promesa py-5" id="promesa">
+  <div class="container">
+
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5 d-flex flex-column gap-4">
+
+        <div class="promesa-card p-4">
+          <h2 class="promesa-titulo">Hacemos tu tarta ideal</h2>
+          <p class="promesa-subtitulo">No hay secreto — ¡solo amor y trabajo honesto!</p>
+
+          <div class="row g-3 mt-2 text-center">
+            <div class="col-3">
+              <div class="promesa-icono mx-auto mb-2">
+                <i class="bi bi-clock-history fs-4"></i>
+              </div>
+              <p class="promesa-stat-num">100%</p>
+              <p class="promesa-stat-label">Puntual</p>
+            </div>
+            <div class="col-3">
+              <div class="promesa-icono mx-auto mb-2">
+                <i class="bi bi-palette fs-4"></i>
+              </div>
+              <p class="promesa-stat-num">500+</p>
+              <p class="promesa-stat-label">Diseños</p>
+            </div>
+            <div class="col-3">
+              <div class="promesa-icono mx-auto mb-2">
+                <i class="bi bi-bag-heart fs-4"></i>
+              </div>
+              <p class="promesa-stat-num">2K+</p>
+              <p class="promesa-stat-label">Pedidos</p>
+            </div>
+            <div class="col-3">
+              <div class="promesa-icono mx-auto mb-2">
+                <i class="bi bi-fire fs-4"></i>
+              </div>
+              <p class="promesa-stat-num">Fresh</p>
+              <p class="promesa-stat-label">Horneado</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="promesa-ticket p-4 d-flex align-items-center gap-3">
+          <div class="ticket-icono flex-shrink-0">
+            <i class="bi bi-ticket-perforated-fill fs-1"></i>
+          </div>
+          <div>
+            <h5 class="ticket-titulo">¡El Ticket Mágico!</h5>
+            <p class="ticket-texto mb-2">Haz tu primer pedido y gana descuentos especiales por ser parte de nuestra familia.</p>
+            <a [routerLink]="['/']" fragment="contacto" class="btn btn-ticket">Canjear Ahora</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- una columna de 6 tarjetas -->
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-4">
+            <div class="mini-tarjeta text-center p-3 h-100">
+              <div class="mini-tarjeta-img mb-3">
+                <img src="imagenes/carrusel-4.jpg" alt="Torta de Fresa">
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mini-tarjeta text-center p-3 h-100">
+              <div class="mini-tarjeta-img mb-3">
+                <img src="imagenes/carrusel-5.jpg" alt="Volcán de Chocolate">
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mini-tarjeta text-center p-3 h-100">
+              <div class="mini-tarjeta-img mb-3">
+                <img src="imagenes/carrusel-6.jpg" alt="Clásico de Vainilla">
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mini-tarjeta text-center p-3 h-100">
+              <div class="mini-tarjeta-img mb-3">
+                <img src="imagenes/carrusel-7.jpg" alt="Red Velvet">
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mini-tarjeta text-center p-3 h-100">
+              <div class="mini-tarjeta-img mb-3">
+                <img src="imagenes/carrusel-9.jpg" alt="Pastel de Bodas">
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mini-tarjeta text-center p-3 h-100">
+              <div class="mini-tarjeta-img mb-3">
+                <img src="imagenes/carrusel-10.jpg" alt="Edición Especial">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- seccion numero 3 hablamos de nuestros productos-->
+<section class="seccion-productos py-5" id="productos">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <p class="productos-etiqueta">Nuestras Creaciones</p>
+      <h2 class="productos-titulo">Pasteles Clásicos</h2>
+      <div class="linea-decorativa mx-auto mt-2"></div>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="tarjeta-producto h-100">
+          <div class="tarjeta-producto-img">
+            <img src="imagenes/pastel-fresa.jpeg" alt="Torta de Fresa" class="img-fluid">
+          </div>
+          <div class="tarjeta-producto-info text-center p-3">
+            <h5 class="producto-nombre">Torta de Fresa</h5>
+            <p class="producto-desc">Bizcocho esponjoso con crema de fresas frescas de temporada.</p>
+            <a [routerLink]="['/torta-fresa']" class="btn btn-producto">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="tarjeta-producto h-100">
+          <div class="tarjeta-producto-img">
+            <img src="imagenes/pastel-chocolate.jpeg" alt="Torta de Chocolate" class="img-fluid">
+          </div>
+          <div class="tarjeta-producto-info text-center p-3">
+            <h5 class="producto-nombre">Volcán de Chocolate</h5>
+            <p class="producto-desc">Intenso sabor a cacao con cobertura de ganache premium.</p>
+            <a [routerLink]="['/volcan-chocolate']" class="btn btn-producto">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="tarjeta-producto h-100">
+          <div class="tarjeta-producto-img">
+            <img src="imagenes/pastel-vainilla.jpeg" alt="Torta de Vainilla" class="img-fluid">
+          </div>
+          <div class="tarjeta-producto-info text-center p-3">
+            <h5 class="producto-nombre">Clásico de Vainilla</h5>
+            <p class="producto-desc">Suave y cremoso, decorado con flores de fondant artesanales.</p>
+            <a [routerLink]="['/clasico-vainilla']" class="btn btn-producto">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="tarjeta-producto h-100">
+          <div class="tarjeta-producto-img">
+            <img src="imagenes/pastel-red.jpeg" alt="Red Velvet" class="img-fluid">
+          </div>
+          <div class="tarjeta-producto-info text-center p-3">
+            <h5 class="producto-nombre">Red Velvet Royale</h5>
+            <p class="producto-desc">Nuestra firma: terciopelo rojo con queso crema suave.</p>
+            <a [routerLink]="['/red-velvet']" class="btn btn-producto">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--seccion numero 4: aqui nuestro equipo de trabajo   -->
+<section class="seccion-equipo py-5" id="equipo">
+  <div class="container">
+
+    <h2 class="equipo-titulo text-center mb-5">Nuestro Equipo</h2>
+
+    <div class="row justify-content-center g-4 text-center">
+
+      <div class="col-md-3 col-sm-6">
+        <div class="miembro-card">
+          <div class="miembro-foto mx-auto mb-3">
+            <img src="imagenes/chef1.jpeg" alt="Valentina Ruiz" class="img-fluid rounded-circle">
+          </div>
+          <h5 class="miembro-nombre">Valentina Ruiz</h5>
+          <p class="miembro-cargo">Fundadora &amp; Chef Principal</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="miembro-card">
+          <div class="miembro-foto mx-auto mb-3">
+            <img src="imagenes/chef2.jpeg" alt="Camila Torres" class="img-fluid rounded-circle">
+          </div>
+          <h5 class="miembro-nombre">Camila Torres</h5>
+          <p class="miembro-cargo">Maestra Decoradora</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="miembro-card">
+          <div class="miembro-foto mx-auto mb-3">
+            <img src="imagenes/chef3.jpeg" alt="Andrés Morales" class="img-fluid rounded-circle">
+          </div>
+          <h5 class="miembro-nombre">Andrés Morales</h5>
+          <p class="miembro-cargo">Pastelero Senior</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

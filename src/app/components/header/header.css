@@ -1,0 +1,53 @@
+.navbar-brand img {
+    height: 65px; /* Ajusta este valor a tu gusto */
+    width: auto;  /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s; /* Un toque de suavidad */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* El logo crece un poquito al pasar el mouse */
+}
+
+.nav-link {
+    font-size: 1.1rem; /* Hace los links un poco más legibles */
+}
+
+/* Color de fondo de la barra */
+.mi-nav-pasteleria {
+    background-color: #f8d7da !important; /* Un rosa pastel suave */
+    border-bottom: 2px solid #e9ecef;   /* Una línea sutil abajo */
+}
+
+/* Color de los enlaces */
+.mi-nav-pasteleria .nav-link {
+    color: #5a5a5a;
+    font-weight: 500;
+}
+
+/* Color cuando pasas el ratón por encima (hover) */
+.mi-nav-pasteleria .nav-link:hover {
+    color: #d63384; /* Un rosa más intenso */
+}
+
+/* Contenedor principal del Nav */
+.navbar {
+    background-color: #5D1013 !important; /* Granate de la imagen */
+    border-bottom: 4px solid #C5A059;   /* Línea dorada inferior */
+}
+
+/* Nombre de la pastelería y enlaces */
+.navbar-brand, .nav-link {
+    color: #FFFFFF !important; /* Texto blanco */
+    font-family: 'Serif', 'Georgia', serif; /* Tipografía más elegante */
+}
+
+/* Efecto al pasar el ratón por los enlaces */
+.nav-link:hover {
+    color: #C5A059 !important; /* Cambia a dorado */
+}
+
+/* Clase opcional para el nombre de la pastelería */
+.brand-text {
+    font-weight: bold;
+    letter-spacing: 1px;
+}

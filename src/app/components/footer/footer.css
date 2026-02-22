@@ -1,0 +1,242 @@
+
+/* --- CONTENEDOR PRINCIPAL DEL FOOTER --- */
+.footer {
+  background-color: #3D0A0C;          
+  border-top: 4px solid #C5A059;      
+}
+
+/* --- TÍTULOS DE CADA COLUMNA --- */
+/* Color dorado para destacar los títulos de sección */
+.footer-titulo {
+  color: #C5A059;                  
+  font-size: 0.95rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Georgia', serif;
+  margin-bottom: 6px;
+}
+
+/* Línea decorativa dorada debajo de cada título */
+.footer-linea {
+  width: 40px;
+  height: 2px;
+  background-color: #C5A059;
+}
+
+/* --- TEXTO GENERAL DEL FOOTER --- */
+.footer-texto {
+  color: rgba(255, 255, 255, 0.75);   
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+/* Ícono dorado dentro del texto de dirección */
+.texto-dorado {
+  color: #C5A059;
+}
+
+
+/* Campo de correo electrónico */
+.footer-input {
+  background-color: rgba(255, 255, 255, 0.08); 
+  border: 1px solid rgba(197, 160, 89, 0.4);   
+  color: #ffffff;
+  font-size: 0.85rem;
+  border-radius: 2px 0 0 2px;
+}
+/* Placeholder del input */
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+/* Efecto al hacer clic en el input */
+.footer-input:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: #C5A059;
+  box-shadow: none;                 
+  color: #ffffff;
+  outline: none;
+}
+
+/* Botón "Ir" del newsletter */
+.btn-footer-suscribir {
+  background-color: #C5A059;       
+  color: #ffffff;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 0 14px;
+  border-radius: 0 2px 2px 0;
+  transition: background-color 0.3s ease;
+}
+.btn-footer-suscribir:hover {
+  background-color: #a8884a;   
+  color: #ffffff;
+}
+
+
+/* Caja cuadrada con ícono en lugar de miniatura de imagen */
+.novedad-icono {
+  width: 42px;
+  height: 42px;
+  background-color: rgba(197, 160, 89, 0.15); 
+  border: 1px solid rgba(197, 160, 89, 0.4);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C5A059;                    
+  font-size: 1.1rem;
+}
+
+/* Texto de la novedad */
+.novedad-texto {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+/* Fecha de la novedad */
+.novedad-fecha {
+  color: #C5A059;                     
+  font-size: 0.75rem;
+}
+
+/* --- ETIQUETAS BADGES DE CATEGORÍAS --- */
+
+.etiqueta-badge {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+/* Hover: se rellena de dorado */
+.etiqueta-badge:hover {
+  background-color: #C5A059;
+  color: #ffffff;
+  border-color: #C5A059;
+}
+
+/* --- REDES SOCIALES --- */
+
+/* Botón circular para cada red social */
+.red-social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(197, 160, 89, 0.4);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+/* Hover: fondo dorado */
+.red-social-btn:hover {
+  background-color: #C5A059;
+  border-color: #C5A059;
+  color: #ffffff; 
+  transform: translateY(-2px);     
+}
+/* Logo pequeño en el footer */
+.footer-logo {
+  height: 38px;
+  width: auto;
+  opacity: 0.85;
+}
+
+/* Nombre de la marca junto al logo */
+.footer-brand {
+  color: #C5A059;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+
+
+.footer-nav-links a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.footer-nav-links a:hover {
+  color: #C5A059;
+}
+.footer-producto-link {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+.footer-producto-link:hover {
+  color: #C5A059;
+}
+.footer-producto-link i {
+  color: #C5A059;
+}
+
+
+/* Línea dorada divisora antes del copyright */
+.footer-hr {
+  border: none;
+  border-top: 1px solid rgba(197, 160, 89, 0.3); 
+  margin: 16px 0 14px;
+}
+
+/* Links rápidos de navegación */
+.footer-nav-links {
+  font-size: 0.82rem;
+}
+.footer-nav-links a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-nav-links a:hover {
+  color: #C5A059;                    
+}
+
+/* Separador entre links */
+.separador {
+  color: rgba(197, 160, 89, 0.5);
+  margin: 0 6px;
+}
+
+/* Texto de copyright */
+.footer-copyright {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.78rem;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 576px) {
+  .footer-titulo {
+    text-align: center;
+  }
+  .footer-linea {
+    margin: 0 auto 12px;             
+  }
+  .footer-texto {
+    text-align: center;
+  }
+  .redes-sociales {
+    justify-content: center;
+  }
+  .footer-brand {
+    font-size: 0.9rem;
+  }
+}

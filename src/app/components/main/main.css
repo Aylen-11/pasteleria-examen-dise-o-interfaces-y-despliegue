@@ -1,0 +1,592 @@
+/* ============================================================
+   ESTILOS COMPONENTE MAIN - ROYALE SWAN PASTELERÍA
+   Paleta: Granate #5D1013 | Dorado #C5A059 | Crema #FFF8F0
+   ============================================================ */
+
+:root {
+  --granate:       #5D1013;
+  --granate-dark:  #3D0A0C;
+  --dorado:        #C5A059;
+  --crema:         #FFF8F0;
+  --texto-oscuro:  #2C1A1A;
+  --texto-gris:    #7A6060;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: var(--crema);
+  color: var(--texto-oscuro);
+}
+
+
+/* ============================================================
+   CARRUSEL
+   ============================================================ */
+
+.carrusel-hero { margin-top: 0; }
+
+/* Cada slide con altura fija y flex para centrar contenido */
+.slide-bg {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  padding: 40px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Colores distintos por slide */
+.slide-bg-1 { background-color: #faf7d9; }
+.slide-bg-2 { background-color: #faf7d9; }
+.slide-bg-3 { background-color: #faf7d9; }
+
+/* Imagen decorativa flotando a la derecha */
+.img-slide-derecha {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  height: 97%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.245));
+}
+
+/* Texto a la izquierda sobre la imagen */
+.slide-contenido {
+  z-index: 2;
+  max-width: 50%;
+}
+
+/* Pequeño texto decorativo dorado */
+.slide-subtitulo {
+  color: #ac9363;
+  font-weight: 800;
+  font-size: 1.9rem;
+  margin-left: -6px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Título grande e itálico */
+.slide-titulo {
+  font-size: 5.1rem;
+  font-weight: bold;
+  color: #741414;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+/* Botón outline granate */
+.btn-slide {
+  background-color: transparent;
+  border: 2px solid #710e11;
+  border-bottom: 5px solid #5D1013;
+  border-right: 6px solid #5D1013;
+  color: #3D0A0C;
+  padding: 10px 28px;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  filter: drop-shadow(10px 5px 5px rgba(0, 0, 0, 0.221));
+  transition: all 0.3s ease;
+}
+.btn-slide:hover {
+  background-color: rgb(213, 213, 213);
+  color: #ffffff;
+}
+
+
+
+.carousel-control-prev {
+  left: auto;             
+  right: 47%;            
+  width: auto;          
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Flecha SIGUIENTE - pegada al borde izquierdo de la imagen */
+.carousel-control-next {
+  right: 3%;              
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Estilo visual de los íconos de flecha */
+.icono-flecha {
+  font-size: 1.5rem;
+  color: #6b0909;
+  border: 2px solid rgb(71, 0, 0);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+}
+.icono-flecha:hover {
+  background-color: #5D1013;
+  color: #ffffff;
+}
+
+/* Puntitos circulares dorados */
+.carousel-indicators [data-bs-target] {
+  background-color: var(--dorado);
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.6;
+}
+.carousel-indicators .active { opacity: 1; }
+
+
+.seccion-info { background-color: var(--crema); }
+
+.info-etiqueta {
+  color: #600808;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.info-titulo {
+  font-family: 'Georgia', cursive;
+  font-size: 3.8rem;
+  color: #b38a3e;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.info-descripcion {
+  color: rgb(78, 15, 15);
+  font-family: 'Georgia', cursive;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* Tarjeta base */
+.tarjeta-beneficio {
+  border: 2px solid #870808;
+  border-right: 4px solid #701515;
+  border-radius: 4px;
+  background-color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.tarjeta-beneficio:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(93,16,19,0.15);
+}
+
+/* Tarjeta central en granate */
+.tarjeta-destacada {
+  background-color: #5D1013;
+  border-color: #9e3232;
+}
+.tarjeta-destacada .tarjeta-titulo,
+.tarjeta-destacada .tarjeta-texto {
+  color: #ffffff !important;
+}
+
+/* Círculo con ícono granate */
+.tarjeta-icono {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--granate);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Círculo blanco para tarjeta granate */
+.tarjeta-icono-claro {
+  background-color: #ffffff;
+  color: var(--granate);
+}
+
+.tarjeta-titulo {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--granate);
+  margin-bottom: 8px;
+}
+.tarjeta-texto {
+  color: var(--texto-gris);
+  font-size: 0.9rem;
+}
+
+.btn-tarjeta {
+  background-color: var(--granate);
+  color: #ffffff;
+  border: none;
+  padding: 6px 18px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+.btn-tarjeta:hover {
+  background-color: var(--granate-dark);
+  color: #ffffff;
+}
+
+.btn-tarjeta-claro {
+  background-color: #ffffff;
+  color: var(--granate);
+  border: none;
+  padding: 6px 18px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.btn-tarjeta-claro:hover {
+  background-color: var(--dorado);
+  color: #ffffff;
+}
+
+
+
+
+/* ============================================================
+   SECCIÓN NUESTRA PROMESA
+   ============================================================ */
+
+.seccion-promesa {
+  background-color: var(--crema);
+}
+
+/* Tarjeta izquierda principal */
+.promesa-card {
+  background-color: #ffffff;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(93, 16, 19, 0.08);
+}
+
+.promesa-titulo {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
+  color: #620b0e;
+  font-weight: 900;
+  margin-bottom: 4px;
+  margin-left: 30px;
+}
+
+.promesa-subtitulo {
+  color: #2C1A1A;
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 0;
+  margin-left: 30px;
+}
+
+/* Íconos de estadísticas */
+.promesa-icono {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgba(93, 16, 19, 0.08);
+  border: 4px solid rgb(102, 95, 95);
+  color: var(--granate);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promesa-stat-num {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--granate);
+  margin-bottom: 0;
+}
+
+.promesa-stat-label {
+  font-size: 0.72rem;
+  color: var(--texto-gris);
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Tarjeta ticket */
+.promesa-ticket {
+  background-color: var(--granate);
+  border-radius: 12px;
+   border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 6px 20px rgba(93, 16, 19, 0.25);
+}
+ 
+.ticket-icono {
+  color: var(--dorado);
+}
+
+.ticket-titulo {
+  color: #242222;
+  font-family: 'Georgia', serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.ticket-texto {
+  color: rgb(125, 9, 9);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.btn-ticket {
+  background-color: #600505;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-weight: 900;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.btn-ticket:hover {
+  background-color: white;
+  border: 1px solid #4e0000;
+  color: #620000;
+}
+
+/* ============================================================
+   MINI TARJETAS VERTICALES
+   ============================================================ */
+
+.mini-tarjeta {
+  background-color: #ffffff;
+  border-top: 1px solid #540505;
+  border-left: 2px solid #890c0c;
+  border-bottom: 4px solid #5c0b0b;
+    border-right: 6px solid #5c0b0b;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(93, 16, 19, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mini-tarjeta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(93, 16, 19, 0.18);
+}
+
+.mini-tarjeta-img {
+  width: 100%;
+  height: 230px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mini-tarjeta-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.mini-tarjeta:hover .mini-tarjeta-img img {
+  transform: scale(1.08);
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .promesa-titulo { font-size: 1.4rem; }
+  .mini-tarjeta-img { height: 80px; }
+  .mini-tarjeta-nombre { font-size: 0.75rem; }
+  .mini-tarjeta-desc { display: none; }
+}
+
+@media (max-width: 576px) {
+  .col-4 { width: 50%; }
+}
+
+
+
+
+
+/* ============================================================
+   PRODUCTOS
+   ============================================================ */
+
+.seccion-productos {
+ background-color:var(--crema);
+   }
+
+.productos-etiqueta {
+  font-family: 'Georgia', cursive;
+  font-style: italic;
+  font-size: 2.3rem;
+  color: #3D0A0C;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.productos-titulo {
+  font-size: 2rem;
+  color: #a78442;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.linea-decorativa {
+  width: 1000px;
+  height: 3px;
+  background-color:rgb(112, 9, 9);
+}
+
+/* Tarjeta de producto con borde dorado */
+.tarjeta-producto {
+  border: 2px solid #7c0000;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fffcd5;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.tarjeta-producto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(93,16,19,0.2);
+}
+
+/* Imagen con zoom al hover */
+.tarjeta-producto-img {
+  height: 200px;
+  overflow: hidden;
+  background-color: #b50808;
+}
+.tarjeta-producto-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.tarjeta-producto:hover .tarjeta-producto-img img {
+  transform: scale(1.08);
+}
+
+.tarjeta-producto-info { background-color: var(--granate); }
+
+.producto-nombre {
+  color: #540505;
+  font-size: 1.05rem;
+  font-weight:900;
+  margin-bottom: 6px;
+}
+.producto-desc {
+  color: rgb(84, 3, 3);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.btn-producto {
+  background-color: rgb(112, 13, 13);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 5px 16px;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.btn-producto:hover {
+  background-color: #ffffff;
+  border-color: #540505;
+  color: #4e0000;
+  font-weight: 900;
+}
+
+/* equipo de trabajo */
+.seccion-equipo {
+  background-color: var(--granate-dark);
+  background-image: url('/imagenes/fondo-pasteleria.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.equipo-titulo {
+  font-family: 'Georgia', cursive;
+  font-style: italic;
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+.miembro-card { transition: transform 0.3s; }
+.miembro-card:hover { transform: translateY(-5px); }
+
+.miembro-foto {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  overflow: hidden;
+}
+.miembro-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.miembro-nombre {
+  color: #ffffff;
+  font-size: 0.98rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.miembro-cargo {
+  color: #ffe0e0;
+  font-size: 0.92rem;
+  font-weight: 800;
+  font-style: italic; 
+}
+
+
+/*responsive */
+
+@media (max-width: 768px) {
+  .slide-bg { min-height: 350px; padding: 30px; }
+  .slide-titulo { font-size: 1.8rem; }
+  .img-slide-derecha { opacity: 0.3; height: 70%; }
+  .slide-contenido { max-width: 100%; }
+  .info-titulo { font-size: 1.8rem; }
+  /* En tablet los botones vuelven a los extremos */
+  .carousel-control-prev { right: auto; left: 5px; }
+  .carousel-control-next { right: 5px; }
+}
+
+@media (max-width: 576px) {
+  .slide-bg { min-height: 280px; padding: 20px; }
+  .slide-titulo { font-size: 1.5rem; }
+  .img-slide-derecha { display: none; }
+  .carousel-control-prev { right: auto; left: 5px; }
+  .carousel-control-next { right: 5px; }
+}

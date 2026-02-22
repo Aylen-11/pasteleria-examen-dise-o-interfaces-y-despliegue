@@ -1,0 +1,132 @@
+<footer class="footer pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4 mb-4">
+
+      <!-- columan 1 newsletter -->
+      <div class="col-md-3 col-sm-6">
+        <h6 class="footer-titulo">Newsletter</h6>
+        <div class="footer-linea mb-3"></div>
+        <p class="footer-texto">
+          Suscríbete y recibe nuestras novedades y ofertas especiales directamente en tu correo.
+        </p>
+        <div class="input-group input-group-sm">
+          <input type="email" class="form-control footer-input" placeholder="Tu correo...">
+          <button class="btn btn-footer-suscribir" type="button">Ir</button>
+        </div>
+      </div>
+      
+     <!--columan número dos -->
+      <div class="col-md-3 col-sm-6">
+        <h6 class="footer-titulo">Últimas Novedades</h6>
+        <div class="footer-linea mb-3"></div>
+        <div class="novedad-item d-flex gap-2 mb-3 align-items-start">
+          <div class="novedad-icono flex-shrink-0">
+            <i class="bi bi-cake2"></i>
+          </div>
+          <div>
+            <p class="novedad-texto mb-0">Nueva colección de pasteles temáticos disponible</p>
+            <small class="novedad-fecha">Feb 20, 2026</small>
+          </div>
+        </div>
+        <div class="novedad-item d-flex gap-2 align-items-start">
+          <div class="novedad-icono flex-shrink-0">
+            <i class="bi bi-star"></i>
+          </div>
+          <div>
+            <p class="novedad-texto mb-0">Taller de decoración artesanal este sábado</p>
+            <small class="novedad-fecha">Feb 18, 2026</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- columna 3 Nuestros Productos-->
+      <div class="col-md-3 col-sm-6">
+        <h6 class="footer-titulo">Nuestros Pasteles</h6>
+        <div class="footer-linea mb-3"></div>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a [routerLink]="['/torta-fresa']" class="footer-producto-link">
+              <i class="bi bi-arrow-right-short me-1"></i>Torta de Fresa
+            </a>
+          </li>
+          <li class="mb-2">
+            <a [routerLink]="['/volcan-chocolate']" class="footer-producto-link">
+              <i class="bi bi-arrow-right-short me-1"></i>Volcán de Chocolate
+            </a>
+          </li>
+          <li class="mb-2">
+            <a [routerLink]="['/clasico-vainilla']" class="footer-producto-link">
+              <i class="bi bi-arrow-right-short me-1"></i>Clásico de Vainilla
+            </a>
+          </li>
+          <li class="mb-2">
+            <a [routerLink]="['/red-velvet']" class="footer-producto-link">
+              <i class="bi bi-arrow-right-short me-1"></i>Red Velvet Royale
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- columna Dirección -->
+      <div class="col-md-3 col-sm-6">
+        <h6 class="footer-titulo">Dirección</h6>
+        <div class="footer-linea mb-3"></div>
+        <p class="footer-texto">
+          <i class="bi bi-geo-alt-fill me-2 texto-dorado"></i>
+          Calle 45 #12-34, Bogotá, Colombia
+        </p>
+        <p class="footer-texto">
+          <i class="bi bi-telephone-fill me-2 texto-dorado"></i>
+          +57 300 123 4567
+        </p>
+        <p class="footer-texto">
+          <i class="bi bi-envelope-fill me-2 texto-dorado"></i>
+          info&#64;royaleswan.com
+        </p>
+        <div class="redes-sociales mt-3 d-flex gap-2">
+          <a [routerLink]="['/']" class="red-social-btn" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a [routerLink]="['/']" class="red-social-btn" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a [routerLink]="['/']" class="red-social-btn" aria-label="TikTok">
+            <i class="bi bi-tiktok"></i>
+          </a>
+          <a [routerLink]="['/']" class="red-social-btn" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-hr">
+
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+        <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+          <img src="/logopasteleria2.png" alt="Logo Royale Swan" class="footer-logo">
+          <span class="footer-brand">Royale Swan</span>
+        </div>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <div class="footer-nav-links mb-1">
+          <a [routerLink]="['/']">Inicio</a>
+          <span class="separador">·</span>
+          <a [routerLink]="['/torta-fresa']">Torta de Fresa</a>
+          <span class="separador">·</span>
+          <a [routerLink]="['/volcan-chocolate']">Volcán Chocolate</a>
+          <span class="separador">·</span>
+          <a [routerLink]="['/clasico-vainilla']">Vainilla</a>
+          <span class="separador">·</span>
+          <a [routerLink]="['/red-velvet']">Red Velvet</a>
+        </div>
+        <p class="footer-copyright mb-0">
+          © 2026 Royale Swan Pastelería. Todos los derechos reservados de A-S.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</footer>
